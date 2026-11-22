@@ -4,7 +4,16 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta name="color-scheme" content="light dark"/>
-<link rel="icon" href="data:,"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='24'%20fill='%2314213D'/%3E%3Ctext%20x='50'%20y='71'%20font-size='62'%20text-anchor='middle'%20fill='%23FF6B5B'%20font-family='Arial%2Csans-serif'%20font-weight='800'%3ES%3C/text%3E%3C/svg%3E"/>
+<meta name="description" content="SHREE is a freelance studio in India building business websites, WhatsApp AI chatbots and ATS-friendly resumes. Fixed USD packages, preview before you pay."/>
+<meta name="theme-color" content="#F4EDE0" media="(prefers-color-scheme: light)"/>
+<meta name="theme-color" content="#0D1730" media="(prefers-color-scheme: dark)"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="SHREE — Websites, AI Chatbots &amp; Resumes That Win Clients"/>
+<meta property="og:description" content="Fixed-price websites from $119, WhatsApp chatbots from $99 and ATS resumes from $20. Try the live demos."/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SHREE — Websites, AI Chatbots &amp; Resumes That Win Clients"/>
+<meta name="twitter:description" content="Fixed-price websites, WhatsApp chatbots and ATS resumes. Try the live demos."/>
 <title>SHREE — Business Portfolio | Websites, AI Chatbots & Resumes That Win Clients</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,25 +31,26 @@
 }
 body[data-theme="light"]{ color-scheme:light; --bg:#F4EDE0; --bg2:#EFE4D0; --surface:#FFFDF7; --surface2:#EFE6D3; --ink:#14213D; --muted:#5C6579; --line:#DDD0B6; --amber-soft:#FFE7E1; --teal-soft:#E3E8F1; --amber-text:#C73E30; --teal-text:#14213D; --blue-soft:#E3E8F1; --panel-text:#F4EDE0; --panel-muted:#C3CADB; }
 body[data-theme="dark"]{ color-scheme:dark; --bg:#0D1730; --bg2:#14213D; --surface:#1A2A4A; --surface2:#22345A; --ink:#F4EDE0; --muted:#B4BCD0; --line:#30436B; --amber-soft:#3D2622; --teal-soft:#22345A; --amber-text:#FF9D92; --teal-text:#D7DEED; --blue-soft:#22345A; --panel-text:#F4EDE0; --panel-muted:#C3CADB; }
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden}
+*{box-sizing:border-box} html{scroll-behavior:smooth;overflow-x:hidden;overflow-x:clip}
+body{margin:0;font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;overflow-x:hidden;overflow-x:clip}
 h1,h2,h3{font-family:"Bricolage Grotesque",Manrope,sans-serif;line-height:.95;letter-spacing:-.02em;margin:0}
 a{color:inherit} button,[role="button"],select,summary,input,textarea{ min-height:44px; font-family:inherit; color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 82%, transparent);border-bottom:1px solid var(--line)}
-.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
 .logo-mark{width:40px;height:40px;border-radius:12px;background:var(--dark);color:#FF6B5B;display:grid;place-items:center;font-family:"Bricolage Grotesque";font-size:20px;border:1px solid var(--line)}
 .logo small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;line-height:1}
+@media(max-width:480px){.logo small{display:none}}
 .nav{display:none;gap:4px} .nav a{text-decoration:none;font-weight:700;font-size:14px;padding:10px 12px;border-radius:999px} .nav a:hover{background:var(--surface2)}
-@media(min-width:860px){.nav{display:flex}}
+@media(min-width:1080px){.nav{display:flex}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 20px;font-weight:800;text-decoration:none;border:1px solid var(--ink);cursor:pointer;font-size:15px}
 .btn-primary{background:var(--amber);border-color:var(--amber);color:#fff;box-shadow:0 10px 24px rgba(255,107,91,.32)}
 .btn-dark{background:var(--ink);color:var(--bg)} .btn-ghost{background:transparent;color:var(--ink)}
 .icon-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-size:18px;color:var(--ink);display:grid;place-items:center;padding:0}
 .icon-btn svg{display:block}
 /* HERO */
-.hero{padding:36px 0 28px;position:relative}
+.hero{padding:36px 0 28px;position:relative;overflow:hidden;overflow:clip}
 .hero-grid{display:grid;gap:28px}
 @media(min-width:920px){.hero-grid{grid-template-columns:1.15fr .85fr;align-items:center}}
 .avail{display:inline-flex;align-items:center;gap:8px;background:var(--teal-soft);color:var(--teal-text);font-weight:800;font-size:13px;padding:8px 12px;border-radius:999px;border:1px solid var(--line)}
@@ -110,7 +120,7 @@ input[type=range]{width:100%;accent-color:var(--amber);min-height:32px}
 .check-item{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--surface2);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:13px;cursor:pointer;font-weight:700}
 .check-item .box{width:26px;height:26px;flex:0 0 26px;border-radius:8px;border:2px solid var(--muted);display:grid;place-items:center;color:transparent}
 .check-item.on .box{background:var(--teal);border-color:var(--teal);color:#fff} .check-item small{display:block;color:var(--muted);font-weight:600}
-.ring-wrap{display:flex;align-items:center;gap:16px} .ring{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-family:"Bricolage Grotesque";font-size:26px;background:conic-gradient(var(--teal-text) 0deg,var(--line) 0deg)}
+.ring-wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap} .ring{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;font-family:"Bricolage Grotesque";font-size:26px;background:conic-gradient(var(--teal-text) 0deg,var(--line) 0deg)}
 .ring i{width:70px;height:70px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-style:normal}
 .addon-grid{display:grid;gap:10px} @media(min-width:600px){.addon-grid{grid-template-columns:1fr 1fr}}
 /* PROJECTS */
@@ -137,12 +147,11 @@ input[type=range]{width:100%;accent-color:var(--amber);min-height:32px}
 details{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px;margin-bottom:10px} summary{font-weight:800;cursor:pointer;padding:10px 0} details p{color:var(--muted)}
 /* CONTACT */
 .contact{background:var(--dark);color:var(--panel-text);border:1px solid var(--line);border-radius:28px;padding:26px;display:grid;gap:20px} @media(min-width:880px){.contact{grid-template-columns:1fr 1fr}}
-.contact h2{color:#fff;font-size:38px} .contact p{color:var(--panel-muted)}
+.contact h2{color:#fff;font-size:clamp(30px,7vw,38px)} .contact p{color:var(--panel-muted)}
 .contact-card{background:#1E3053;border:1px solid #30436B;border-radius:18px;padding:18px}
 .contact-card input,.contact-card textarea,.contact-card select{width:100%;border-radius:12px;border:1px solid #30436B;background:#0D1730;color:#fff;padding:12px;margin-bottom:10px}
 .hero-card textarea::placeholder,.contact-card input::placeholder,.contact-card textarea::placeholder{color:#93A0BA;opacity:1}
 .contact-card select option{color:#111;background:#fff}
-.contact-links{display:grid;gap:10px;margin-top:16px} .contact-links a{background:#fff;color:#111;text-decoration:none;font-weight:800;border-radius:12px;padding:13px 14px;display:block}
 footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 .reveal{opacity:1;transform:none} .reveal.in{animation:fadeUp .7s cubic-bezier(.22,1,.36,1)}
 @keyframes fadeUp{from{opacity:.15;transform:translateY(22px)}to{opacity:1;transform:none}}
@@ -155,11 +164,11 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 .spot::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,107,91,.18),transparent 45%)}
 .spot:hover::after{opacity:1}
 .hero-card-wrap{position:relative}
-.float-badge{position:absolute;z-index:3;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:9px 13px;font-weight:800;font-size:13px;display:flex;align-items:center;gap:7px;animation:floaty 4.5s ease-in-out infinite}
+.float-badge{position:absolute;z-index:3;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:9px 13px;font-weight:800;font-size:13px;display:flex;align-items:center;gap:7px;animation:floaty 4.5s ease-in-out infinite;pointer-events:none}
 .float-badge b{color:var(--amber-text)}
 .fb1{top:-16px;right:18px}.fb2{bottom:52px;left:-10px;animation-delay:-1.6s}.fb3{bottom:-14px;right:22px;animation-delay:-3s}
 @keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
-@media(max-width:640px){.fb2{left:6px}.fb1{right:8px}}
+@media(max-width:640px){.fb2{display:none}.fb1{right:8px}}
 .hero-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,91,.32),transparent 65%);pointer-events:none;transform:translate(-50%,-50%);left:var(--gx,80%);top:var(--gy,20%);transition:left .25s ease,top .25s ease;z-index:0}
 .svc-icon{transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
 .svc:hover .svc-icon{transform:scale(1.12) rotate(-6deg)}
@@ -189,14 +198,227 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 .proj{transition:box-shadow .3s}.proj:hover{box-shadow:var(--shadow)}
 @media(prefers-reduced-motion:reduce){.float-badge,.doc-scene.on .doc-scan,.typing i{animation:none!important}}
 .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:999px;font-weight:800;z-index:99;transition:.3s;box-shadow:var(--shadow)} .toast.show{transform:translateX(-50%) translateY(0)}
+@media(max-width:640px){
+  .wrap{padding-left:28px;padding-right:28px}
+  section{padding-top:68px;padding-bottom:68px}
+  .hero{padding-top:42px;padding-bottom:38px}
+  .hero-grid{gap:40px}
+  .hero-ctas{gap:14px;margin:26px 0}
+  .stats{gap:16px;margin-top:26px}
+  .stat{padding:16px}
+  .hero-card{padding:24px}
+  .sec-head{margin-bottom:32px}
+  .services,.projects{gap:22px}
+  .steps,.creds{gap:18px}
+  .panel{padding:24px}
+  .contact{padding:28px 24px;gap:24px}
+  .svc{padding:24px}
+  .proj-body{padding:20px}
+}
+/* === TABLET ONLY: 641px–1020px — extra breathing room, no edge-touching, badges clear of buttons === */
+@media(min-width:641px) and (max-width:1020px){
+  .wrap{padding-left:36px;padding-right:36px}
+  section{padding-top:72px;padding-bottom:72px}
+  section[style]{padding-top:72px !important}
+  .hero{padding-top:52px;padding-bottom:48px}
+  .hero-grid{gap:48px}
+  .hero h1{font-size:clamp(40px,6.8vw,64px);max-width:100%;overflow-wrap:break-word}
+  .hero-ctas{gap:14px;margin:26px 0}
+  .lead{font-size:18px}
+  .stats{gap:16px;margin-top:28px}
+  .stat{padding:16px}
+  .hero-card{padding:26px}
+  .hero-card-wrap{margin-top:8px}
+  .sec-head{margin-bottom:34px}
+  .services,.projects{gap:24px}
+  .steps,.creds{gap:20px}
+  .panel{padding:28px}
+  .contact{padding:32px;gap:26px}
+  .svc{padding:26px}
+  .proj-body{padding:22px}
+  .float-badge{pointer-events:none}
+  .fb2,.fb3{display:none}
+  .fb1{top:-16px;right:14px}
+}
+
+/* ============================================================
+   RESPONSIVE LAYER — mobile-first fixes, tuned breakpoints
+   ============================================================ */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+input,textarea,select{font-size:16px} /* stops iOS zooming on focus */
+h1,h2,h3{overflow-wrap:break-word}
+.svc h3,.proj-body h3,.cred h3,.step h3{line-height:1.12}
+
+/* Fluid side gutters (also fixes .hero / .topbar-in, whose shorthand padding zeroed the sides) + notch safety */
+:root{--gutter:20px}
+@media(max-width:640px){:root{--gutter:24px}}
+@media(max-width:380px){:root{--gutter:18px}}
+@media(min-width:641px) and (max-width:1020px){:root{--gutter:36px}}
+.wrap{padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+@media(min-width:1440px){.wrap{max-width:1280px}}
+
+/* Header */
+.topbar{padding-top:env(safe-area-inset-top,0px)}
+.topbar-in{flex-wrap:nowrap}
+.logo{min-width:0;flex:0 1 auto}
+.top-actions{display:flex;gap:8px;align-items:center;flex:0 0 auto}
+.hire{padding:10px 16px}
+.menu-btn .x{display:none}
+.menu-btn[aria-expanded="true"] .bars{display:none}
+.menu-btn[aria-expanded="true"] .x{display:block}
+.mobile-nav{display:none;border-top:1px solid var(--line);background:var(--bg);max-height:calc(100vh - 70px);max-height:calc(100dvh - 70px);overflow-y:auto}
+.mobile-nav.open{display:block}
+.mobile-nav .wrap{display:grid;gap:4px;padding-top:10px;padding-bottom:16px}
+.mobile-nav a:not(.btn){display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:14px;font-weight:700;text-decoration:none}
+.mobile-nav a:not(.btn):hover,.mobile-nav a:not(.btn):active{background:var(--surface2)}
+.mobile-nav .btn{margin-top:8px}
+@media(min-width:1080px){.menu-btn,.mobile-nav{display:none!important}}
+@media(max-width:440px){.hire{display:none}}
+
+/* Hero */
+.hero h1{overflow-wrap:break-word}
+@media(max-width:640px){
+  .hero h1{font-size:clamp(34px,10.5vw,48px)}
+  .lead{font-size:16px}
+  .sec-head p{font-size:16px}
+  .sec-head h2{line-height:1.05}
+}
+@media(max-width:480px){
+  .hero-ctas .btn{flex:1 1 100%}
+}
+/* Stats: type scales with the tile so "2–10 days" never overflows */
+.stat{container-type:inline-size}
+.stat b{white-space:nowrap;font-size:clamp(20px,17cqw,28px)}
+.stat b [data-count]{font-size:inherit}
+.stats{grid-template-columns:repeat(2,1fr)}
+@media(min-width:600px) and (max-width:919px){.stats{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:920px) and (max-width:1079px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.stats{grid-template-columns:repeat(4,1fr)}}
+
+/* Services: 1 col → 2 col (third card spans) → 3 col */
+@media(min-width:700px) and (max-width:1039px){
+  .services{grid-template-columns:1fr 1fr}
+  .services .svc:nth-child(3){grid-column:1/-1}
+}
+@media(min-width:1040px){.services{grid-template-columns:repeat(3,1fr)}}
+
+/* Playground */
+.tab{flex:0 1 auto}
+@media(max-width:640px){
+  .tabs{padding:12px;gap:8px}
+  .tab{flex:1 1 auto;text-align:center;padding:10px 12px;font-size:14px}
+  .pills .pill{flex:1 1 140px}
+  .phone{max-width:100%}
+  .chat-body{min-height:240px}
+}
+
+/* Projects: avoid a lonely orphan card between 760–1019px */
+@media(min-width:760px) and (max-width:1019px){
+  .projects .proj:nth-child(3){grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .projects .proj:nth-child(3) .proj-visual{height:100%;min-height:188px}
+}
+.scene-hint{max-width:calc(100% - 16px);overflow:hidden;text-overflow:ellipsis}
+
+/* Process + credentials */
+.steps{grid-template-columns:1fr}
+@media(min-width:560px){.steps{grid-template-columns:1fr 1fr}}
+@media(min-width:1020px){.steps{grid-template-columns:repeat(4,1fr)}}
+.creds{grid-template-columns:1fr}
+@media(min-width:760px){.creds{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.cred{flex-direction:column;gap:8px}}
+
+/* Contact */
+.contact h2{line-height:1.05}
+
+/* Very small phones (≤380px) */
+@media(max-width:380px){
+  .btn{padding:12px 16px;font-size:14px}
+  .hero-card{padding:20px}
+  .panel{padding:18px}
+  .svc,.proj-body{padding:20px}
+  .contact{padding:22px 18px}
+  .price{font-size:28px}
+  details{padding:4px 14px}
+}
+
+/* Touch devices: no sticky hover states after a tap */
+@media(hover:none){
+  .svc:hover{transform:none;box-shadow:none}
+  .svc:hover .svc-icon{transform:none}
+  .proj:hover{box-shadow:none}
+  .spot:hover::after{opacity:0}
+  .nav a:hover{background:transparent}
+}
+
+/* Footer + toast respect the home-indicator area */
+footer{padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+.toast{bottom:calc(22px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 32px);width:max-content;text-align:center;border-radius:22px;opacity:0;pointer-events:none;transform:translateX(-50%) translateY(140px)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* WhatsApp */
+.btn-wa{background:#25D366;border-color:#25D366;color:#06301A;box-shadow:0 10px 24px rgba(37,211,102,.28)}
+.btn-wa:hover{background:#2FE173}
+.wa-float{position:fixed;z-index:60;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:transform .2s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{display:block}
+@media(prefers-reduced-motion:reduce){.wa-float{transition:none}}
+footer{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+/* Package builder: selected state (inline styles used to hide it) */
+#basePills .pill{background:var(--surface);color:var(--ink);border-color:var(--line)}
+#basePills .pill.active{background:var(--amber);color:#fff;border-color:var(--amber);box-shadow:0 6px 16px rgba(255,107,91,.3)}
+#basePills .pill small{font-weight:600;opacity:.9}
+
+/* Currency toggle */
+.cur-toggle{display:inline-flex;border:1px solid var(--line);border-radius:999px;background:var(--surface);padding:3px;gap:2px;flex:0 0 auto}
+.cur-btn{min-height:38px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:var(--ink);font-weight:800;font-size:13px;cursor:pointer;white-space:nowrap}
+.cur-btn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.cur-top{display:none}
+@media(min-width:700px){.cur-top{display:inline-flex}.cur-mobile{display:none!important}}
+.cur-mobile{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 14px;font-weight:700}
+.cur-row{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:14px;font-weight:800;font-size:14px}
+data.px{font:inherit;color:inherit}
+.when-inr{display:none}
+html[data-cur="INR"] .when-inr{display:inline}
+html[data-cur="INR"] .when-usd{display:none}
+
+/* Contact: icon links + two-column form */
+@media(min-width:880px){.contact{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:36px;padding:34px}}
+.contact-lead{display:flex;flex-direction:column}
+.reach{margin-top:auto;padding-top:28px}
+.reach-label{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#93A0BA;font-weight:700;margin-bottom:12px}
+.icon-links{display:flex;gap:12px;flex-wrap:wrap}
+.icon-tile{--tile:#1E3053;width:60px;height:60px;border-radius:18px;background:var(--tile);border:1px solid #30436B;display:grid;place-items:center;text-decoration:none;transition:transform .2s,background .2s,color .2s}
+.icon-tile svg{display:block;width:28px;height:28px}
+.icon-tile.wa{color:#25D366}.icon-tile.wa:hover,.icon-tile.wa:focus-visible{--tile:#25D366;color:#06301A}
+.icon-tile.mail{color:#FF9D92}.icon-tile.mail:hover,.icon-tile.mail:focus-visible{--tile:#FF6B5B;color:#14213D}
+.icon-tile.fv{color:#1DBF73}.icon-tile.fv:hover,.icon-tile.fv:focus-visible{--tile:#1DBF73;color:#06301A}
+.icon-tile:hover{transform:translateY(-3px)}
+.icon-tile:focus-visible{outline:3px solid #FF9D92;outline-offset:3px}
+@media(hover:none){.icon-tile:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){.icon-tile{transition:none}.icon-tile:hover{transform:none}}
+.contact-card{padding:22px}
+.cf-grid{display:grid;gap:14px}
+.cf-field{min-width:0}
+.cf-field label{display:block;font-size:12px;font-weight:800;letter-spacing:.08em;color:#FF9D92;margin-bottom:6px;text-transform:uppercase}
+.cf-field input,.cf-field select,.cf-field textarea{margin-bottom:0}
+.cf-field textarea{resize:vertical;min-height:110px}
+.cf-actions{display:grid;gap:10px;margin-top:2px}
+.cf-actions .btn{width:100%;margin:0}
+.cf-actions .btn-ghost{color:#fff;border-color:#30436B}
+@media(min-width:520px){.cf-actions{grid-template-columns:1fr 1fr}.cf-actions .btn-ghost{grid-column:1/-1}}
+@media(max-width:480px){.contact{padding:24px 14px}.contact-card{padding:16px}}
+@media(max-width:380px){.icon-tile{width:56px;height:56px}}
 </style>
 </head>
 <body>
+<script>try{var _t=localStorage.getItem("shree-theme");if(_t==="dark"||_t==="light")document.body.setAttribute("data-theme",_t)}catch(e){}</script>
 <header class="topbar"><div class="wrap topbar-in">
   <a class="logo" href="#top"><span class="logo-mark">S</span><span>SHREE<small>Freelance Studio • India</small></span></a>
   <nav class="nav"><a href="#services">Services</a><a href="#playground">Try Live Demos</a><a href="#work">Work</a><a href="#process">Process</a><a href="#faq">FAQ</a></nav>
-  <div style="display:flex;gap:8px;align-items:center"><button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><a class="btn btn-primary" href="#contact" style="padding:10px 16px">Hire Me →</a></div>
-</div></header>
+  <div class="top-actions"><div class="cur-toggle cur-top" role="group" aria-label="Currency"><button type="button" class="cur-btn" data-cur="USD" aria-pressed="true">$ USD</button><button type="button" class="cur-btn" data-cur="INR" aria-pressed="false">₹ INR</button></div><button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></button><a class="btn btn-primary hire" href="#contact">Hire Me →</a><button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><svg class="bars" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="x" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+</div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile"><div class="wrap"><a href="#services">Services</a><a href="#playground">Try Live Demos</a><a href="#work">Work</a><a href="#process">Process</a><a href="#faq">FAQ</a><div class="cur-mobile"><span>Show prices in</span><div class="cur-toggle" role="group" aria-label="Currency"><button type="button" class="cur-btn" data-cur="USD" aria-pressed="true">$ USD</button><button type="button" class="cur-btn" data-cur="INR" aria-pressed="false">₹ INR</button></div></div><a class="btn btn-primary" href="#contact">Hire Me →</a></div></nav>
+</header>
 
 <main id="top">
 <!-- HERO -->
@@ -217,7 +439,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
       <div class="stat"><b><span data-count="14">14</span> days</b><span>Free support</span></div>
     </div>
   </div>
-  <div class="hero-card-wrap"><div class="hero-glow" aria-hidden="true"></div><span class="float-badge fb1">⚡ Replies in <b>24 hrs</b></span><span class="float-badge fb2">💬 Chatbots from <b>$99</b></span><span class="float-badge fb3">⭐ Preview before you pay</span>
+  <div class="hero-card-wrap"><div class="hero-glow" aria-hidden="true"></div><span class="float-badge fb1">⚡ Replies in <b>24 hrs</b></span><span class="float-badge fb2">💬 Chatbots from <b><data class="px" value="99">$99</data></b></span><span class="float-badge fb3">⭐ Preview before you pay</span>
   <div class="hero-card tilt spot" id="heroCard">
     <div class="kicker" style="color:#FF9D92">⚡ 60-second enquiry builder</div>
     <h3>What do you need?</h3>
@@ -231,23 +453,24 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
       </div>
       <label for="quickMsg">Your goal in one line</label>
       <textarea id="quickMsg" placeholder="e.g. I run a dental clinic in India and need online bookings…">I need a website for my business in India</textarea>
-      <a class="btn btn-primary" id="quickSend" href="mailto:shreepranavaganesh@gmail.com">✉️ Send enquiry to SHREE</a>
+      <a class="btn btn-wa" id="quickWa" href="https://wa.me/916383523514" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+      <a class="btn btn-primary" id="quickSend" href="mailto:shreepranavaganesh@gmail.com">✉️ Send enquiry by email</a>
       <button class="btn btn-ghost" id="quickCopy" style="color:#fff;border-color:#30436B;width:100%;margin-top:8px">Copy enquiry text</button>
     </div>
   </div></div>
 </div></div>
 
-<div class="marquee" aria-hidden="true"><div class="marquee-track">WEBSITES FROM $119 &nbsp;✦&nbsp; WHATSAPP CHATBOTS FROM $99 &nbsp;✦&nbsp; ATS RESUMES FROM $20 &nbsp;✦&nbsp; FAST DELIVERY &nbsp;✦&nbsp; BASED IN INDIA • WORKING REMOTELY WORLDWIDE &nbsp;✦&nbsp; WEBSITES FROM $119 &nbsp;✦&nbsp; WHATSAPP CHATBOTS FROM $99 &nbsp;✦&nbsp; ATS RESUMES FROM $20 &nbsp;✦&nbsp; FAST DELIVERY &nbsp;✦&nbsp; BASED IN INDIA • WORKING REMOTELY WORLDWIDE &nbsp;✦&nbsp;</div></div>
+<div class="marquee" aria-hidden="true"><div class="marquee-track">WEBSITES FROM <data class="px" value="119">$119</data> &nbsp;✦&nbsp; WHATSAPP CHATBOTS FROM <data class="px" value="99">$99</data> &nbsp;✦&nbsp; ATS RESUMES FROM <data class="px" value="20">$20</data> &nbsp;✦&nbsp; FAST DELIVERY &nbsp;✦&nbsp; BASED IN INDIA • WORKING REMOTELY WORLDWIDE &nbsp;✦&nbsp; WEBSITES FROM <data class="px" value="119">$119</data> &nbsp;✦&nbsp; WHATSAPP CHATBOTS FROM <data class="px" value="99">$99</data> &nbsp;✦&nbsp; ATS RESUMES FROM <data class="px" value="20">$20</data> &nbsp;✦&nbsp; FAST DELIVERY &nbsp;✦&nbsp; BASED IN INDIA • WORKING REMOTELY WORLDWIDE &nbsp;✦&nbsp;</div></div>
 
 <!-- SERVICES -->
 <section id="services"><div class="wrap">
-  <div class="sec-head reveal"><div class="kicker">Services & honest pricing</div><h2>Three services. Clear prices. No surprises.</h2><p>Every package includes revisions, a walkthrough on delivery, and support after handover. All pricing is in USD — direct enquiries and Fiverr orders get the same package.</p></div>
+  <div class="sec-head reveal"><div class="kicker">Services & honest pricing</div><h2>Three services. Clear prices. No surprises.</h2><p>Every package includes revisions, a walkthrough on delivery, and support after handover.</p><div class="cur-row"><span>Show prices in</span><div class="cur-toggle" role="group" aria-label="Currency"><button type="button" class="cur-btn" data-cur="USD" aria-pressed="true">$ USD</button><button type="button" class="cur-btn" data-cur="INR" aria-pressed="false">₹ INR</button></div></div></div>
   <div class="services">
-    <article class="svc reveal tilt spot"><div class="svc-icon" style="background:var(--amber-soft)">📄</div><h3>Resume & LinkedIn Optimisation</h3><p>For students & job-seekers who are skilled but not getting shortlisted. ATS-friendly, achievement-led, recruiter-ready.</p><div class="price">$20 <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700">$20 Basic • $40 Premium • $60 Complete</div><ul><li>ATS resume rewrite from scratch</li><li>LinkedIn headline + About that sells you</li><li>Cover letter (Complete plan)</li><li>Delivered in 2–3 days, PDF + editable copy</li></ul><a class="btn btn-dark" href="#playground" onclick="switchTab('resume')">Check your resume score →</a></article>
+    <article class="svc reveal tilt spot"><div class="svc-icon" style="background:var(--amber-soft)">📄</div><h3>Resume & LinkedIn Optimisation</h3><p>For students & job-seekers who are skilled but not getting shortlisted. ATS-friendly, achievement-led, recruiter-ready.</p><div class="price"><data class="px" value="20">$20</data> <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700"><data class="px" value="20">$20</data> Basic • <data class="px" value="40">$40</data> Premium • <data class="px" value="60">$60</data> Complete</div><ul><li>ATS resume rewrite from scratch</li><li>LinkedIn headline + About that sells you</li><li>Cover letter (Complete plan)</li><li>Delivered in 2–3 days, PDF + editable copy</li></ul><a class="btn btn-dark" href="#playground" onclick="switchTab('resume')">Check your resume score →</a></article>
 
-    <article class="svc featured reveal tilt spot"><span class="badge">MOST IN DEMAND 🔥</span><div class="svc-icon" style="background:var(--teal-soft)">🤖</div><h3>AI Chatbot for Businesses</h3><p>For clinics, coaching centres, shops & colleges losing enquiries after hours. Your bot answers FAQs, shares prices & books appointments 24×7.</p><div class="price">$99 <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700">$99 WhatsApp FAQ • $179 Web + WhatsApp • $299 + Booking & Leads</div><ul><li>WhatsApp + website chatbot flows</li><li>Price list, timings & booking replies</li><li>Lead capture to Google Sheet / WhatsApp</li><li>Setup steps + training video</li></ul><a class="btn btn-primary" href="#playground" onclick="switchTab('chat')">Try the live chatbot →</a></article>
+    <article class="svc featured reveal tilt spot"><span class="badge">MOST IN DEMAND 🔥</span><div class="svc-icon" style="background:var(--teal-soft)">🤖</div><h3>AI Chatbot for Businesses</h3><p>For clinics, coaching centres, shops & colleges losing enquiries after hours. Your bot answers FAQs, shares prices & books appointments 24×7.</p><div class="price"><data class="px" value="99">$99</data> <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700"><data class="px" value="99">$99</data> WhatsApp FAQ • <data class="px" value="179">$179</data> Web + WhatsApp • <data class="px" value="299">$299</data> + Booking & Leads</div><ul><li>WhatsApp + website chatbot flows</li><li>Price list, timings & booking replies</li><li>Lead capture to Google Sheet / WhatsApp</li><li>Setup steps + training video</li></ul><a class="btn btn-primary" href="#playground" onclick="switchTab('chat')">Try the live chatbot →</a></article>
 
-    <article class="svc reveal tilt spot"><div class="svc-icon" style="background:var(--blue-soft)">🌐</div><h3>Business Websites & Landing Pages</h3><p>For businesses that look small online but are great offline. Fast, mobile-first sites with WhatsApp enquiries built in.</p><div class="price">$119 <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700">$119 Landing Page • $239 3–5 Page Site • $419 Site + Chatbot + SEO</div><ul><li>Mobile-first, loads in seconds</li><li>Services, prices, reviews & booking form</li><li>WhatsApp click-to-chat everywhere</li><li>Google Maps, SEO basics & analytics</li></ul><a class="btn btn-dark" href="#playground" onclick="switchTab('builder')">Build your package →</a></article>
+    <article class="svc reveal tilt spot"><div class="svc-icon" style="background:var(--blue-soft)">🌐</div><h3>Business Websites & Landing Pages</h3><p>For businesses that look small online but are great offline. Fast, mobile-first sites with WhatsApp enquiries built in.</p><div class="price"><data class="px" value="119">$119</data> <span>onwards</span></div><div style="font-size:13px;color:var(--muted);font-weight:700"><data class="px" value="119">$119</data> Landing Page • <data class="px" value="239">$239</data> 3–5 Page Site • <data class="px" value="419">$419</data> Site + Chatbot + SEO</div><ul><li>Mobile-first, loads in seconds</li><li>Services, prices, reviews & booking form</li><li>WhatsApp click-to-chat everywhere</li><li>Google Maps, SEO basics & analytics</li></ul><a class="btn btn-dark" href="#playground" onclick="switchTab('builder')">Build your package →</a></article>
   </div>
 </div></section>
 
@@ -255,53 +478,53 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 <section id="playground" style="padding-top:10px"><div class="wrap">
   <div class="sec-head reveal"><div class="kicker">Don't just read — try it</div><h2>The interactive playground</h2><p>This is exactly how I work: you can test the chatbot, score your resume, and price your own website — right here, no sign-up.</p></div>
   <div class="play reveal">
-    <div class="tabs" role="tablist">
-      <button class="tab active" data-tab="chat">💬 AI Chatbot Demo</button>
-      <button class="tab" data-tab="resume">📄 Resume Score Checker</button>
-      <button class="tab" data-tab="builder">🧮 Website Package Builder</button>
+    <div class="tabs" role="tablist" aria-label="Interactive demos">
+      <button type="button" class="tab active" role="tab" id="tab-chat" aria-selected="true" aria-controls="panel-chat" tabindex="0" data-tab="chat">💬 AI Chatbot Demo</button>
+      <button type="button" class="tab" role="tab" id="tab-resume" aria-selected="false" aria-controls="panel-resume" tabindex="-1" data-tab="resume">📄 Resume Score Checker</button>
+      <button type="button" class="tab" role="tab" id="tab-builder" aria-selected="false" aria-controls="panel-builder" tabindex="-1" data-tab="builder">🧮 Website Package Builder</button>
     </div>
 
     <!-- CHAT -->
-    <div class="panel active" id="panel-chat"><div class="panel-grid">
+    <div class="panel active" id="panel-chat" role="tabpanel" aria-labelledby="tab-chat" tabindex="0"><div class="panel-grid">
       <div><h3 style="font-size:26px;margin-bottom:10px">Meet a chatbot I can build for you</h3><p style="color:var(--muted)">This is a live demo for a sample dental clinic. Tap a question or type your own — try <em>“price”</em>, <em>“timing”</em> or <em>“book”</em>. Imagine this answering your customers at 11 pm while you sleep.</p><ul style="line-height:2;font-weight:600"><li>✅ Answers instantly, 24×7</li><li>✅ Shares your price list without you typing it</li><li>✅ Books appointments & captures the lead</li></ul><a class="btn btn-primary" href="#contact">I want this for my business →</a></div>
       <div class="phone"><div class="phone-screen">
         <div class="chat-head">Sunrise Dental Clinic <small>● online — replies instantly (Sample)</small></div>
-        <div class="chat-body" id="chatBody"><div class="msg bot">Hi! 👋 Welcome to Sunrise Dental Clinic. Ask me about timings, prices, or tap Book to get an appointment.</div></div>
+        <div class="chat-body" id="chatBody" role="log" aria-live="polite" aria-label="Chat conversation"><div class="msg bot">Hi! 👋 Welcome to Sunrise Dental Clinic. Ask me about timings, prices, or tap Book to get an appointment.</div></div>
         <div class="chips"><button class="chip" data-q="What are your timings?">🕐 Timings</button><button class="chip" data-q="Price list please">💰 Price list</button><button class="chip" data-q="I want to book an appointment">📅 Book appointment</button><button class="chip" data-q="Where are you located?">📍 Location</button></div>
         <form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type a message…" autocomplete="off"><button type="submit" aria-label="Send">➤</button></form>
       </div></div>
     </div></div>
 
     <!-- RESUME -->
-    <div class="panel" id="panel-resume"><div class="panel-grid">
-      <div><h3 style="font-size:26px;margin-bottom:10px">Is your resume ATS-ready?</h3><p style="color:var(--muted)">Tap everything your current resume already has. Most resumes I rewrite start below 40 — and jump past 80 after optimisation.</p><div class="ring-wrap"><div class="ring" id="scoreRing"><i id="scoreNum">0</i></div><div><strong id="scoreLabel">Tap items to score your resume</strong><p id="scoreTip" style="color:var(--muted);font-size:14px;margin:4px 0 0">Honest answers = a useful score.</p></div></div><br><a class="btn btn-primary" href="#contact">Fix my resume — from $20 →</a></div>
+    <div class="panel" id="panel-resume" role="tabpanel" aria-labelledby="tab-resume" tabindex="0"><div class="panel-grid">
+      <div><h3 style="font-size:26px;margin-bottom:10px">Is your resume ATS-ready?</h3><p style="color:var(--muted)">Tap everything your current resume already has. Most resumes I rewrite start below 40 — and jump past 80 after optimisation.</p><div class="ring-wrap"><div class="ring" id="scoreRing"><i id="scoreNum">0</i></div><div aria-live="polite"><strong id="scoreLabel">Tap items to score your resume</strong><p id="scoreTip" style="color:var(--muted);font-size:14px;margin:4px 0 0">Honest answers = a useful score.</p></div></div><br><a class="btn btn-primary" href="#contact">Fix my resume — from <data class="px" value="20">$20</data> →</a></div>
       <div class="check-list" id="atsList">
-        <button class="check-item" data-pts="15"><span class="box">✓</span><span>One clear headline / target role<small>Recruiters decide in 6 seconds</small></span></button>
-        <button class="check-item" data-pts="15"><span class="box">✓</span><span>Keywords from the job description<small>Without these, ATS filters you out</small></span></button>
-        <button class="check-item" data-pts="20"><span class="box">✓</span><span>Numbers in achievements<small>“Increased… by 30%” beats “responsible for…”</small></span></button>
-        <button class="check-item" data-pts="15"><span class="box">✓</span><span>Projects / experience with links<small>Live links prove you can build</small></span></button>
-        <button class="check-item" data-pts="15"><span class="box">✓</span><span>Clean single-column ATS format<small>No tables, icons or fancy columns</small></span></button>
-        <button class="check-item" data-pts="20"><span class="box">✓</span><span>Strong LinkedIn headline + About<small>Recruiters check LinkedIn next</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="15"><span class="box" aria-hidden="true">✓</span><span>One clear headline / target role<small>Recruiters decide in 6 seconds</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="15"><span class="box" aria-hidden="true">✓</span><span>Keywords from the job description<small>Without these, ATS filters you out</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="20"><span class="box" aria-hidden="true">✓</span><span>Numbers in achievements<small>“Increased… by 30%” beats “responsible for…”</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="15"><span class="box" aria-hidden="true">✓</span><span>Projects / experience with links<small>Live links prove you can build</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="15"><span class="box" aria-hidden="true">✓</span><span>Clean single-column ATS format<small>No tables, icons or fancy columns</small></span></button>
+        <button type="button" class="check-item" aria-pressed="false" data-pts="20"><span class="box" aria-hidden="true">✓</span><span>Strong LinkedIn headline + About<small>Recruiters check LinkedIn next</small></span></button>
       </div>
     </div></div>
 
     <!-- BUILDER -->
-    <div class="panel" id="panel-builder"><div class="panel-grid">
+    <div class="panel" id="panel-builder" role="tabpanel" aria-labelledby="tab-builder" tabindex="0"><div class="panel-grid">
       <div><h3 style="font-size:26px;margin-bottom:10px">Price your website in 20 seconds</h3><p style="color:var(--muted)">Pick a base package, add what you need — the total updates live. This is the exact pricing I quote clients. No hidden charges.</p>
         <div class="pills" id="basePills" style="--x:1">
-          <button class="pill active" data-price="119" data-days="3" data-name="Landing Page" style="background:var(--surface);color:var(--ink);border-color:var(--line)">Landing Page<br><small>$119 • 3 days</small></button>
-          <button class="pill" data-price="239" data-days="6" data-name="Business Site (3–5 pages)" style="background:var(--surface);color:var(--ink);border-color:var(--line)">Business Site<br><small>$239 • 6 days</small></button>
-          <button class="pill" data-price="419" data-days="10" data-name="Site + Chatbot + SEO" style="background:var(--surface);color:var(--ink);border-color:var(--line)">Site + Chatbot + SEO<br><small>$419 • 10 days</small></button>
+          <button class="pill active" data-price="119" data-days="3" data-name="Landing Page">Landing Page<br><small><data class="px" value="119">$119</data> • 3 days</small></button>
+          <button class="pill" data-price="239" data-days="6" data-name="Business Site (3–5 pages)">Business Site<br><small><data class="px" value="239">$239</data> • 6 days</small></button>
+          <button class="pill" data-price="419" data-days="10" data-name="Site + Chatbot + SEO">Site + Chatbot + SEO<br><small><data class="px" value="419">$419</data> • 10 days</small></button>
         </div>
         <p style="font-weight:800;font-size:14px">Add-ons — tap to add / remove:</p>
         <div class="addon-grid" id="addons">
-          <button class="check-item" data-price="99" data-days="3"><span class="box">✓</span><span>WhatsApp AI Chatbot <small>+$99 • +3 days</small></span></button>
-          <button class="check-item" data-price="35" data-days="1"><span class="box">✓</span><span>Online booking form <small>+$35 • +1 day</small></span></button>
-          <button class="check-item" data-price="25" data-days="1"><span class="box">✓</span><span>Google Business + Maps setup <small>+$25 • +1 day</small></span></button>
-          <button class="check-item" data-price="45" data-days="2"><span class="box">✓</span><span>Copywriting (I write it all) <small>+$45 • +2 days</small></span></button>
+          <button type="button" class="check-item" aria-pressed="false" data-price="99" data-days="3"><span class="box" aria-hidden="true">✓</span><span>WhatsApp AI Chatbot <small>+<data class="px" value="99">$99</data> • +3 days</small></span></button>
+          <button type="button" class="check-item" aria-pressed="false" data-price="35" data-days="1"><span class="box" aria-hidden="true">✓</span><span>Online booking form <small>+<data class="px" value="35">$35</data> • +1 day</small></span></button>
+          <button type="button" class="check-item" aria-pressed="false" data-price="25" data-days="1"><span class="box" aria-hidden="true">✓</span><span>Google Business + Maps setup <small>+<data class="px" value="25">$25</data> • +1 day</small></span></button>
+          <button type="button" class="check-item" aria-pressed="false" data-price="45" data-days="2"><span class="box" aria-hidden="true">✓</span><span>Copywriting (I write it all) <small>+<data class="px" value="45">$45</data> • +2 days</small></span></button>
         </div>
       </div>
-      <div><div class="result-box"><div style="font-size:13px;font-weight:800;letter-spacing:.08em">YOUR ESTIMATE</div><b id="pkgTotal">$119</b><p id="pkgDetail">Landing Page • Ready in ~3 days</p><p style="margin-top:12px">50% to start, 50% on delivery. Includes 2 revision rounds + 14 days free support.</p></div><br><button class="btn btn-primary" id="pkgEnquire" style="width:100%">Send me this package →</button><p style="font-size:13px;color:var(--muted);text-align:center">Opens a ready-to-send email — you just press Send.</p></div>
+      <div><div class="result-box" aria-live="polite"><div style="font-size:13px;font-weight:800;letter-spacing:.08em">YOUR ESTIMATE</div><b id="pkgTotal"><data class="px" value="119">$119</data></b><p id="pkgDetail">Landing Page • Ready in ~3 days</p><p style="margin-top:12px">50% to start, 50% on delivery. Includes 2 revision rounds + 14 days free support.</p></div><br><button class="btn btn-wa" id="pkgWa" style="width:100%">💬 Send this package on WhatsApp</button><button class="btn btn-primary" id="pkgEnquire" style="width:100%;margin-top:8px">✉️ Or email me this package →</button><p style="font-size:13px;color:var(--muted);text-align:center">Opens a ready-to-send email — you just press Send.</p></div>
     </div></div>
   </div>
 </div></section>
@@ -310,11 +533,11 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 <section id="work" style="padding-top:10px"><div class="wrap">
   <div class="sec-head reveal"><div class="kicker">Gig samples</div><h2>Samples for each service — try them live</h2><p>Three samples made specifically for these freelance services. They are demos of what you would get — labelled as samples, not paid client work.</p></div>
   <div class="projects">
-    <article class="proj reveal tilt spot"><div class="proj-visual v-web scene" data-scene="web" role="button" tabindex="0" aria-label="Play dental website sample animation"><div class="browser-mock"><div class="browser-bar"><i style="background:#F87171"></i><i style="background:#FBBF24"></i><i style="background:#34D399"></i><span>sunrisedental.example</span></div><div class="browser-body"><div class="tooth-wrap">🦷<span class="spark s1">✨</span><span class="spark s2">✨</span><span class="spark s3">⭐</span></div><div class="browser-lines"><b>Sunrise Dental Clinic</b><p>Cleanings, root canals & smiles — book in 30 seconds.</p><span class="mini-book">Book appointment →</span></div></div></div><span class="scene-hint">👆 Tap / hover — watch it sparkle</span></div><div class="proj-body"><h3>Dental Clinic Website — Website Sample</h3><p>Full demo site for a fictional clinic in India: treatments with $ prices, cost estimator, doctors, reviews, FAQ & booking form with WhatsApp confirm.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">WEBSITE GIG</span><span class="tag">FROM $119</span></div><div class="proj-links"><a href="#playground" onclick="switchTab('builder')">Price a site like this →</a></div></div></article>
+    <article class="proj reveal tilt spot"><div class="proj-visual v-web scene" data-scene="web" role="button" tabindex="0" aria-label="Play dental website sample animation"><div class="browser-mock"><div class="browser-bar"><i style="background:#F87171"></i><i style="background:#FBBF24"></i><i style="background:#34D399"></i><span>sunrisedental.example</span></div><div class="browser-body"><div class="tooth-wrap">🦷<span class="spark s1">✨</span><span class="spark s2">✨</span><span class="spark s3">⭐</span></div><div class="browser-lines"><b>Sunrise Dental Clinic</b><p>Cleanings, root canals & smiles — book in 30 seconds.</p><span class="mini-book">Book appointment →</span></div></div></div><span class="scene-hint">👆 Tap / hover — watch it sparkle</span></div><div class="proj-body"><h3>Dental Clinic Website — Website Sample</h3><p>Full demo site for a fictional clinic in India: treatments with $ prices, cost estimator, doctors, reviews, FAQ & booking form with WhatsApp confirm.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">WEBSITE GIG</span><span class="tag">FROM <data class="px" value="119">$119</data></span></div><div class="proj-links"><a href="#playground" onclick="switchTab('builder')">Price a site like this →</a></div></div></article>
 
-    <article class="proj reveal tilt spot"><div class="proj-visual v-chat scene" data-scene="chat" role="button" tabindex="0" aria-label="Play chatbot sample animation"><div class="chat-scene" id="chatScene"><canvas id="beaconCanvas" width="150" height="150" aria-hidden="true"></canvas><div class="mini-bubbles"><div class="mini-msg me">Hi, what are your timings? 🙋</div><div class="mini-msg bot">Mon–Sat, 9:30 AM – 8:30 PM ✅ Want me to book you in?</div><div class="mini-msg bot">Bot is typing<span class="typing"><i></i><i></i><i></i></span></div></div></div><span class="scene-hint">👆 Tap to replay the chat</span></div><div class="proj-body"><h3>Clinic WhatsApp Bot — Chatbot Sample</h3><p>The live bot in the playground above: timings, price list, location & appointment booking — the exact flow a $99–$299 chatbot delivers.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">CHATBOT GIG</span><span class="tag">FROM $99</span></div><div class="proj-links"><a href="#playground" onclick="switchTab('chat')">Chat with it →</a></div></div></article>
+    <article class="proj reveal tilt spot"><div class="proj-visual v-chat scene" data-scene="chat" role="button" tabindex="0" aria-label="Play chatbot sample animation"><div class="chat-scene" id="chatScene"><canvas id="beaconCanvas" width="150" height="150" aria-hidden="true"></canvas><div class="mini-bubbles"><div class="mini-msg me">Hi, what are your timings? 🙋</div><div class="mini-msg bot">Mon–Sat, 9:30 AM – 8:30 PM ✅ Want me to book you in?</div><div class="mini-msg bot">Bot is typing<span class="typing"><i></i><i></i><i></i></span></div></div></div><span class="scene-hint">👆 Tap to replay the chat</span></div><div class="proj-body"><h3>Clinic WhatsApp Bot — Chatbot Sample</h3><p>The live bot in the playground above: timings, price list, location & appointment booking — the exact flow a <data class="px" value="99">$99</data>–<data class="px" value="299">$299</data> chatbot delivers.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">CHATBOT GIG</span><span class="tag">FROM <data class="px" value="99">$99</data></span></div><div class="proj-links"><a href="#playground" onclick="switchTab('chat')">Chat with it →</a></div></div></article>
 
-    <article class="proj reveal tilt spot"><div class="proj-visual v-resume scene" data-scene="resume" role="button" tabindex="0" aria-label="Play resume sample animation"><div class="doc-scene" id="docScene"><div class="score-badge"><span><span id="docScore">42</span><small>ATS SCORE</small></span></div><div class="doc-paper"><b>RESUME — AFTER ✨</b><div class="doc-line"><i style="--w:92%"></i></div><div class="doc-line"><i style="--w:78%"></i></div><div class="doc-line"><i style="--w:88%"></i></div><div class="doc-line"><i style="--w:64%"></i></div><div class="doc-line"><i style="--w:82%"></i></div><div class="doc-scan"></div></div></div><span class="scene-hint">👆 Tap to rescan — 42 → 94</span></div><div class="proj-body"><h3>ATS Resume Makeover — Resume Sample</h3><p>Before/after style sample showing an ATS-friendly rewrite: clear headline, keyword-matched skills, numbered achievements and a matching LinkedIn headline + About.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">RESUME GIG</span><span class="tag">FROM $20</span></div><div class="proj-links"><a href="#playground" onclick="switchTab('resume')">Check your score →</a></div></div></article>
+    <article class="proj reveal tilt spot"><div class="proj-visual v-resume scene" data-scene="resume" role="button" tabindex="0" aria-label="Play resume sample animation"><div class="doc-scene" id="docScene"><div class="score-badge"><span><span id="docScore">42</span><small>ATS SCORE</small></span></div><div class="doc-paper"><b>RESUME — AFTER ✨</b><div class="doc-line"><i style="--w:92%"></i></div><div class="doc-line"><i style="--w:78%"></i></div><div class="doc-line"><i style="--w:88%"></i></div><div class="doc-line"><i style="--w:64%"></i></div><div class="doc-line"><i style="--w:82%"></i></div><div class="doc-scan"></div></div></div><span class="scene-hint">👆 Tap to rescan — 42 → 94</span></div><div class="proj-body"><h3>ATS Resume Makeover — Resume Sample</h3><p>Before/after style sample showing an ATS-friendly rewrite: clear headline, keyword-matched skills, numbered achievements and a matching LinkedIn headline + About.</p><div class="tags"><span class="tag sample">GIG SAMPLE</span><span class="tag">RESUME GIG</span><span class="tag">FROM <data class="px" value="20">$20</data></span></div><div class="proj-links"><a href="#playground" onclick="switchTab('resume')">Check your score →</a></div></div></article>
   </div>
 </div></section>
 
@@ -347,32 +570,62 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
 <!-- CONTACT -->
 <section id="contact" style="padding-top:10px"><div class="wrap">
   <div class="contact reveal">
-    <div><div class="kicker" style="color:#FF9D92">Let's build yours</div><h2>Tell me about your project — I'll reply within 24 hours.</h2><p>My gigs are launching on Fiverr — meanwhile you can enquire directly here. Email me — the form on the right builds a ready-to-send email, nothing is stored or sent without you pressing Send.</p>
-      <div class="contact-links">
-        <a href="mailto:shreepranavaganesh@gmail.com">✉️ shreepranavaganesh@gmail.com</a>
-        <a href="https://www.fiverr.com/ganesh__23/write-an-ats-friendly-resume-and-linkedin-profile-that-gets-you-shortlisted" target="_blank" rel="noopener">★ &nbsp;Resume gig on Fiverr ↗</a>
+    <div class="contact-lead"><div class="kicker" style="color:#FF9D92">Let's build yours</div><h2>Tell me about your project — I'll reply within 24 hours.</h2><p>My gigs are launching on Fiverr — meanwhile you can enquire directly here. The form builds a ready-to-send email or WhatsApp message — nothing is stored or sent until you press Send.</p>
+      <div class="reach">
+        <div class="reach-label">Reach me directly</div>
+        <div class="icon-links">
+          <a class="icon-tile wa" href="https://wa.me/916383523514?text=Hi%20SHREE%2C%20I%20found%20you%20through%20your%20portfolio%20and%20have%20a%20project%20in%20mind." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5a9.5 9.5 0 0 0-8.1 14.4L2.7 21.5l4.7-1.2A9.5 9.5 0 1 0 12 2.5z" fill="currentColor"/><path d="M9 7.8c-.3 0-.6.2-.8.5-.4.6-.5 1.5.4 2.8 1.1 1.7 2.6 3 4.4 3.5.9.3 1.6.1 2-.4.2-.3.3-.6.2-.8l-1.5-.8c-.2-.1-.4 0-.6.2l-.4.5c-.3-.1-1.2-.6-1.9-1.5-.3-.4-.4-.7-.5-.9l.4-.4c.2-.2.2-.4.1-.6L9.6 8c-.1-.2-.3-.2-.6-.2z" style="fill:var(--tile)"/></svg></a>
+          <a class="icon-tile mail" href="mailto:shreepranavaganesh@gmail.com" aria-label="Send an email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.5 8l7.5 5.5L19.5 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="icon-tile fv" href="https://www.fiverr.com/ganesh__23/write-an-ats-friendly-resume-and-linkedin-profile-that-gets-you-shortlisted" target="_blank" rel="noopener" aria-label="View my resume gig on Fiverr (opens in a new tab)" title="Fiverr"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><text x="11" y="16.5" text-anchor="middle" font-family="Bricolage Grotesque,Manrope,sans-serif" font-weight="800" font-size="14" fill="currentColor">fi</text><circle cx="18.4" cy="15.7" r="1.5" fill="currentColor"/></svg></a>
+        </div>
       </div>
     </div>
     <form class="contact-card" id="enquiryForm">
-      <label style="font-size:12px;font-weight:800;letter-spacing:.08em;color:#FF9D92">YOUR NAME</label>
-      <input id="fName" placeholder="e.g. Priya — Sunrise Dental Clinic" required>
-      <label style="font-size:12px;font-weight:800;letter-spacing:.08em;color:#FF9D92">I NEED</label>
-      <select id="fSvc"><option>Business Website — from $119</option><option>AI Chatbot — from $99</option><option>Resume + LinkedIn — from $20</option><option>Website + Chatbot Combo — from $419</option><option>Something else</option></select>
-      <label style="font-size:12px;font-weight:800;letter-spacing:.08em;color:#FF9D92">DETAILS</label>
-      <textarea id="fMsg" rows="4" placeholder="Your business, city, timeline, anything that helps…"></textarea>
-      <button class="btn btn-primary" type="submit" style="width:100%">✉️ Open ready-to-send email</button>
-      <button class="btn btn-ghost" type="button" id="copyEnquiry" style="width:100%;margin-top:8px;color:#fff;border-color:#30436B">Copy enquiry instead</button>
+      <div class="cf-grid">
+        <div class="cf-field"><label for="fName">Your name</label><input id="fName" placeholder="e.g. Priya — Sunrise Dental Clinic" required></div>
+        <div class="cf-field"><label for="fSvc">I need</label><select id="fSvc"><option data-usd="119" data-tpl="Business Website — from {p}">Business Website — from $119</option><option data-usd="99" data-tpl="AI Chatbot — from {p}">AI Chatbot — from $99</option><option data-usd="20" data-tpl="Resume + LinkedIn — from {p}">Resume + LinkedIn — from $20</option><option data-usd="419" data-tpl="Website + Chatbot Combo — from {p}">Website + Chatbot Combo — from $419</option><option>Something else</option></select></div>
+        <div class="cf-field cf-wide"><label for="fMsg">Details</label><textarea id="fMsg" rows="4" placeholder="Your business, city, timeline, anything that helps…"></textarea></div>
+        <div class="cf-wide cf-actions">
+          <button class="btn btn-primary" type="submit">✉️ Send by email</button>
+          <button class="btn btn-wa" type="button" id="waEnquiry">💬 Send on WhatsApp</button>
+          <button class="btn btn-ghost" type="button" id="copyEnquiry">Copy enquiry instead</button>
+        </div>
+      </div>
     </form>
   </div>
 </div></section>
 </main>
-<footer><div class="wrap">© 2026 SHREE — Freelance Studio • India • Websites • AI Chatbots • Resumes<br><span style="font-size:12px">Gig samples on this page are demos labelled as samples — not paid client work. All prices in USD.</span></div></footer>
+<footer><div class="wrap">© 2026 SHREE — Freelance Studio • India • Websites • AI Chatbots • Resumes<br><span style="font-size:12px">Gig samples on this page are demos labelled as samples — not paid client work. <span class="when-usd">All prices in USD.</span><span class="when-inr">Prices in ₹ are converted from the USD list.</span></span></div></footer>
+<a class="wa-float" id="waFloat" href="https://wa.me/916383523514" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.5a9.5 9.5 0 0 0-8.1 14.4L2.7 21.5l4.7-1.2A9.5 9.5 0 1 0 12 2.5z" fill="#fff"/><path d="M9 7.8c-.3 0-.6.2-.8.5-.4.6-.5 1.5.4 2.8 1.1 1.7 2.6 3 4.4 3.5.9.3 1.6.1 2-.4.2-.3.3-.6.2-.8l-1.5-.8c-.2-.1-.4 0-.6.2l-.4.5c-.3-.1-1.2-.6-1.9-1.5-.3-.4-.4-.7-.5-.9l.4-.4c.2-.2.2-.4.1-.6L9.6 8c-.1-.2-.3-.2-.6-.2z" fill="#128C4A"/></svg></a>
 <div class="toast" id="toast">Copied ✓</div>
 
 <script>
+// Currency (edit RATE to change the USD→INR conversion; INR prices round to the nearest ₹100)
+var RATE=95,cur='USD';
+function inrN(u){return Math.round(u*RATE/100)*100}
+
+// WhatsApp
+var WA_NUM='916383523514';
+function waLink(t){return 'https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(t)}
+function openWa(t){window.open(waLink(t),'_blank','noopener')}
+
+// Mobile menu
+var menuBtn=document.getElementById('menuBtn'),mobileNav=document.getElementById('mobileNav');
+function setMenu(o){mobileNav.classList.toggle('open',o);menuBtn.setAttribute('aria-expanded',o?'true':'false');menuBtn.setAttribute('aria-label',o?'Close menu':'Open menu')}
+menuBtn.addEventListener('click',function(){setMenu(!mobileNav.classList.contains('open'))});
+mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
+window.matchMedia('(min-width:1080px)').addEventListener('change',function(e){if(e.matches)setMenu(false)});
+
 // Theme (in-memory only)
 var themeBtn=document.getElementById('themeBtn');
-themeBtn.addEventListener('click',function(){var cur=document.body.getAttribute('data-theme');var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;var next=cur? (cur==='dark'?'light':'dark') : (dark?'light':'dark');document.body.setAttribute('data-theme',next);showToast(next==='dark'?'Dark mode 🌙':'Light mode ☀️');});
+var darkMQ=window.matchMedia('(prefers-color-scheme: dark)');
+function applyTheme(t,save){document.body.setAttribute('data-theme',t);themeBtn.setAttribute('aria-pressed',t==='dark'?'true':'false');
+ document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.setAttribute('content',t==='dark'?'#0D1730':'#F4EDE0')});
+ if(save){try{localStorage.setItem('shree-theme',t)}catch(e){}}}
+(function(){var saved=document.body.getAttribute('data-theme');if(saved)applyTheme(saved,false);else themeBtn.setAttribute('aria-pressed',darkMQ.matches?'true':'false')})();
+darkMQ.addEventListener('change',function(){if(!document.body.getAttribute('data-theme'))themeBtn.setAttribute('aria-pressed',darkMQ.matches?'true':'false')});
+themeBtn.addEventListener('click',function(){var cur=document.body.getAttribute('data-theme');var next=cur?(cur==='dark'?'light':'dark'):(darkMQ.matches?'light':'dark');applyTheme(next,true);showToast(next==='dark'?'Dark mode 🌙':'Light mode ☀️');});
 
 // Counters + reveal
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');var b=e.target.querySelector('[data-count]');}})},{threshold:.2});
@@ -387,13 +640,16 @@ function copyText(txt){if(navigator.clipboard){navigator.clipboard.writeText(txt
 // Quick enquiry
 var quickSvc='Business Website';
 document.querySelectorAll('#quickPills .pill').forEach(function(p){p.addEventListener('click',function(){document.querySelectorAll('#quickPills .pill').forEach(function(x){x.classList.remove('active')});p.classList.add('active');quickSvc=p.dataset.svc;updateQuick()})});
-function updateQuick(){var msg=document.getElementById('quickMsg').value;var body=encodeURIComponent('Hi SHREE, I need: '+quickSvc+'\n\n'+msg+'\n\n— Sent from your business portfolio');document.getElementById('quickSend').href='mailto:shreepranavaganesh@gmail.com?subject='+encodeURIComponent('Enquiry: '+quickSvc)+'&body='+body}
+function updateQuick(){var msg=document.getElementById('quickMsg').value;var body=encodeURIComponent('Hi SHREE, I need: '+quickSvc+'\n\n'+msg+'\n\n— Sent from your business portfolio');document.getElementById('quickWa').href=waLink('Hi SHREE, I need: '+quickSvc+'\n\n'+msg);document.getElementById('quickSend').href='mailto:shreepranavaganesh@gmail.com?subject='+encodeURIComponent('Enquiry: '+quickSvc)+'&body='+body}
 document.getElementById('quickMsg').addEventListener('input',updateQuick);updateQuick();
 document.getElementById('quickCopy').addEventListener('click',function(){copyText('Hi SHREE, I need: '+quickSvc+' — '+document.getElementById('quickMsg').value)});
 
 // Tabs
-function switchTab(name){document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t.dataset.tab===name)});document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('active',p.id==='panel-'+name)});document.getElementById('playground').scrollIntoView({behavior:'smooth',block:'start'})}
+function switchTab(name,noScroll){document.querySelectorAll('.tab').forEach(function(t){var on=t.dataset.tab===name;t.classList.toggle('active',on);t.setAttribute('aria-selected',on?'true':'false');t.setAttribute('tabindex',on?'0':'-1')});document.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('active',p.id==='panel-'+name)});if(!noScroll)document.getElementById('playground').scrollIntoView({behavior:'smooth',block:'start'})}
 document.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){switchTab(t.dataset.tab)})});
+document.querySelector('.tabs').addEventListener('keydown',function(e){var tabs=[].slice.call(document.querySelectorAll('.tab'));var i=tabs.indexOf(document.activeElement);if(i<0)return;var n=null;
+ if(e.key==='ArrowRight'||e.key==='ArrowDown')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft'||e.key==='ArrowUp')n=(i-1+tabs.length)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;
+ if(n===null)return;e.preventDefault();switchTab(tabs[n].dataset.tab,true);tabs[n].focus()});
 
 // Chatbot
 var chatBody=document.getElementById('chatBody');
@@ -411,24 +667,26 @@ document.getElementById('chatForm').addEventListener('submit',function(e){e.prev
 
 // Resume score
 var score=0;
-document.querySelectorAll('#atsList .check-item').forEach(function(item){item.addEventListener('click',function(){item.classList.toggle('on');score=0;document.querySelectorAll('#atsList .check-item.on').forEach(function(x){score+=+x.dataset.pts});
+document.querySelectorAll('#atsList .check-item').forEach(function(item){item.addEventListener('click',function(){item.classList.toggle('on');item.setAttribute('aria-pressed',item.classList.contains('on')?'true':'false');score=0;document.querySelectorAll('#atsList .check-item.on').forEach(function(x){score+=+x.dataset.pts});
  document.getElementById('scoreNum').textContent=score;document.getElementById('scoreRing').style.background='conic-gradient(var(--teal-text) '+(score*3.6)+'deg, var(--line) 0deg)';
  var label,tip;if(score===0){label='Tap items to score your resume';tip='Honest answers = a useful score.'}else if(score<40){label='Needs work — recruiters may never see it';tip='This is where most resumes I rewrite start. The good news: it\'s fixable in 2–3 days.'}else if(score<80){label='Decent — but you\'re leaving calls on the table';tip='Add numbers, keywords & a stronger LinkedIn to push past 80.'}else{label='Strong! You\'re in the top bracket';tip='A final polish + tailored cover letter can still sharpen it further.'}
  document.getElementById('scoreLabel').textContent=label;document.getElementById('scoreTip').textContent=tip;})});
 
 // Package builder
 var basePrice=119,baseDays=3,baseName='Landing Page';
-function calcPkg(){var total=basePrice,days=baseDays,adds=[];document.querySelectorAll('#addons .check-item.on').forEach(function(x){total+=+x.dataset.price;days+=+x.dataset.days;adds.push(x.textContent.trim().split('+')[0].trim().replace(/^\$\S+\s*/,'').trim()||x.textContent.trim().split('+')[0].trim())});
- document.getElementById('pkgTotal').textContent='$'+total.toLocaleString('en-US');document.getElementById('pkgDetail').textContent=baseName+(adds.length?' + '+adds.join(', '):'')+' • Ready in ~'+days+' days';
- return {total:total,days:days,name:baseName+(adds.length?' + '+adds.join(', '):'')};}
+function calcPkg(){var total=basePrice,totalInr=inrN(basePrice),days=baseDays,adds=[];document.querySelectorAll('#addons .check-item.on').forEach(function(x){total+=+x.dataset.price;totalInr+=inrN(+x.dataset.price);days+=+x.dataset.days;adds.push(x.textContent.trim().split('+')[0].trim().replace(/^\$\S+\s*/,'').trim()||x.textContent.trim().split('+')[0].trim())});
+ var shown=cur==='INR'?'₹'+totalInr.toLocaleString('en-IN'):'$'+total.toLocaleString('en-US');document.getElementById('pkgTotal').textContent=shown;document.getElementById('pkgDetail').textContent=baseName+(adds.length?' + '+adds.join(', '):'')+' • Ready in ~'+days+' days';
+ return {total:total,label:(cur==='INR'?shown+' (USD list price $'+total.toLocaleString('en-US')+')':shown),days:days,name:baseName+(adds.length?' + '+adds.join(', '):'')};}
 document.querySelectorAll('#basePills .pill').forEach(function(p){p.addEventListener('click',function(){document.querySelectorAll('#basePills .pill').forEach(function(x){x.classList.remove('active')});p.classList.add('active');basePrice=+p.dataset.price;baseDays=+p.dataset.days;baseName=p.dataset.name;calcPkg()})});
-document.querySelectorAll('#addons .check-item').forEach(function(x){x.addEventListener('click',function(){x.classList.toggle('on');calcPkg()})});calcPkg();
+document.querySelectorAll('#addons .check-item').forEach(function(x){x.addEventListener('click',function(){x.classList.toggle('on');x.setAttribute('aria-pressed',x.classList.contains('on')?'true':'false');calcPkg()})});calcPkg();
 function openMail(subject,body){var a=document.createElement('a');a.href='mailto:shreepranavaganesh@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.body.appendChild(a);a.click();a.remove()}
-document.getElementById('pkgEnquire').addEventListener('click',function(){var p=calcPkg();openMail('Website enquiry: '+p.name,'Hi SHREE, I built this package on your portfolio:\n\n'+p.name+'\nEstimate: $'+p.total.toLocaleString('en-US')+' • ~'+p.days+' days\n\nMy business details:\n')});
+document.getElementById('pkgWa').addEventListener('click',function(){var p=calcPkg();openWa('Hi SHREE, I built this package on your portfolio:\n\n'+p.name+'\nEstimate: '+p.label+' • ~'+p.days+' days\n\nMy business details:\n')});
+document.getElementById('pkgEnquire').addEventListener('click',function(){var p=calcPkg();openMail('Website enquiry: '+p.name,'Hi SHREE, I built this package on your portfolio:\n\n'+p.name+'\nEstimate: '+p.label+' • ~'+p.days+' days\n\nMy business details:\n')});
 
 // Enquiry form
 function enquiryText(){return 'Hi SHREE, I\'m '+ (document.getElementById('fName').value||'(name)') +'. I need: '+document.getElementById('fSvc').value+'. Details: '+(document.getElementById('fMsg').value||'—')}
 document.getElementById('enquiryForm').addEventListener('submit',function(e){e.preventDefault();openMail('Project enquiry — '+document.getElementById('fSvc').value,enquiryText())});
+document.getElementById('waEnquiry').addEventListener('click',function(){openWa(enquiryText())});
 document.getElementById('copyEnquiry').addEventListener('click',function(){copyText(enquiryText())});
 
 // === Interactive polish — like the personal portfolio ===
@@ -458,6 +716,20 @@ if(beacon&&!reduceMotion){var bctx=beacon.getContext('2d');var bt=0;(function dr
 var docScene=document.getElementById('docScene');var docPlayed=false;
 function playDoc(){if(!docScene)return;docScene.classList.add('on');var el=document.getElementById('docScore');docPlayed=true;var n=42;var target=94;el.textContent=n;var t=setInterval(function(){n+=2;if(n>=target){n=target;clearInterval(t)}el.textContent=n},28)}
 if(docScene){var docObs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){playDoc();docObs.disconnect()}})},{threshold:.4});docObs.observe(docScene);var docVisual=docScene.closest('.scene');docVisual.addEventListener('click',function(){docScene.classList.remove('on');setTimeout(playDoc,80)});docVisual.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();docScene.classList.remove('on');setTimeout(playDoc,80)}})}
+
+// Currency toggle: remembers the choice; first visit defaults to INR for visitors in India
+function fmtP(u){return cur==='INR'?'₹'+inrN(u).toLocaleString('en-IN'):'$'+u.toLocaleString('en-US')}
+function setCur(c,save){cur=c;document.documentElement.setAttribute('data-cur',c);
+ document.querySelectorAll('data.px').forEach(function(d){d.textContent=fmtP(+d.value)});
+ document.querySelectorAll('option[data-usd]').forEach(function(o){o.textContent=o.dataset.tpl.replace('{p}',fmtP(+o.dataset.usd))});
+ document.querySelectorAll('.cur-btn').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.cur===c?'true':'false')});
+ var r=document.getElementById('rateTxt');if(r)r.textContent='₹'+RATE;
+ calcPkg();
+ if(save){try{localStorage.setItem('shree-cur',c)}catch(e){}}}
+document.querySelectorAll('.cur-btn').forEach(function(b){b.addEventListener('click',function(){setCur(b.dataset.cur,true)})});
+(function(){var c=null;try{c=localStorage.getItem('shree-cur')}catch(e){}
+ if(c!=='INR'&&c!=='USD'){c='USD';try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||'';var l=(navigator.language||'').toLowerCase();if(tz==='Asia/Kolkata'||tz==='Asia/Calcutta'||l==='en-in')c='INR'}catch(e){}}
+ setCur(c,false)})();
 </script>
 </body>
 </html>
